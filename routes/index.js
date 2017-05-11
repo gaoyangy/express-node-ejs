@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require("../sqldb/index")
+var db = require("../config/index")
 var User = db.User;
 
 

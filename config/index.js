@@ -1,4 +1,5 @@
-var db = {
+var Sequelize = require('sequelize');
+var config = {
     sequelize: {
         username: 'root',
         password: '123',
@@ -12,5 +13,8 @@ var db = {
         }
     }
 };
-
+var db = {
+    sequelize: new Sequelize(config.sequelize.database, config.sequelize.username, config.sequelize.password, config.sequelize)
+};
+db.User = db.sequelize.import('../schema/user.js');
 module.exports = db;

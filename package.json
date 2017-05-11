@@ -22,7 +22,6 @@
         "mysql": "^2.13.0",
         "node-sass": "^4.5.2",
         "rimraf": "^2.6.1",
-        "sass-loader": "^6.0.4",
         "sequelize": "^3.30.4",
         "serve-favicon": "~2.3.2"
     }
