@@ -17,4 +17,8 @@ var db = {
     sequelize: new Sequelize(config.sequelize.database, config.sequelize.username, config.sequelize.password, config.sequelize)
 };
 db.User = db.sequelize.import('../schema/user.js');
+// db.add = db.sequelize.import('../schema/add.js');
+// db.User.hasOne(db.add);
+// db.add.belongsTo(db.User);
+// db.sequelize.sync();
 module.exports = db;

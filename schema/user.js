@@ -6,11 +6,9 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             defaultValue: DataTypes.UUIDV1
         },
-        user_name: {
-            type: DataTypes.STRING
-        },
-        password: {
-            type: DataTypes.STRING
+        user: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     }, {
         freezeTableName: true
